@@ -1,0 +1,51 @@
+.about-me {
+    background-color: var(--yellow);
+    border-radius: 15px;
+}
+
+.about-me h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+}
+
+.about-me p {
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.photo-me {
+    width: 300px;
+    height: autovw;
+    border-radius: 15px;
+    border: 5px solid var(--white);
+}
+
+.photos {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* reusable flex wrapper for content cards */
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 10px;
+    padding: 50px 0;
+}
+
+.content-card {
+    display: inline;
+    max-width: 60vw;
+    text-align: center;
+    color: white;
+    margin: 30px 20px;
+    padding: 50px;
+    border-radius: 30px;
+    padding-top: 20px;
+}
