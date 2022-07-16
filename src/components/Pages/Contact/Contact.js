@@ -8,6 +8,7 @@ function Contact() {
   const [userName, setUserName] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+ 
   function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
   }
@@ -31,30 +32,21 @@ function Contact() {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
-
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!isValidEmail(email)) {
-      setErrorMessage("Email is invalid");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      // Then we check to see if the message is not valid. If so, we set an error message regarding the message.
-    }
+    console.log(email, userName, message);
+    console.log(errorMessage)
 
     // Based on the input type, we set the state of either email, username, and message
     if (inputType === "email" && !email | !isValidEmail(email)) {
       setErrorMessage("Please provide a valid email address");
-    } else {
+    } else if (inputType === "email" && email) {
       setErrorMessage("");
-    }
-
-    if (inputType === "userName" && !userName) {
+    } else if (inputType === "userName" && !userName) {
       setErrorMessage("Please provide your name");
-    } else {
+    } else if (inputType === "userName" && userName){
       setErrorMessage("");
-    }
-
-    if (inputType === "message" && !message) {
+    } else if (inputType === "message" && !message) {
       setErrorMessage("Please provide a message");
-    } else {
+    } else if (inputType === "message" && message) {
       setErrorMessage("");
     }
   };
@@ -64,7 +56,7 @@ function Contact() {
     e.preventDefault();
 
     alert(
-      `Thank you for sending me a message, ${userName}! I'll get back to you via email asap! 😊`
+      `Thank you for sending me a message, ${userName}! This form actually isn't sending this message anywhere right now. 🤦 But - you can send me an email with the link in the footer below! 😊`
     );
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
@@ -88,13 +80,15 @@ function Contact() {
           value={userName}
           name="userName"
           onChange={handleInputChange}
+          onBlur={handleOnBlur}
           type="text"
           placeholder="What is your name?"
         />
-        <input
+        <textarea
           value={message}
           name="message"
           onChange={handleInputChange}
+          onBlur={handleOnBlur}
           type="message"
           placeholder="What would you like to tell me?"
         />
