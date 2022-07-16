@@ -6,7 +6,7 @@ import linkedin from "../../assets/img/linkedin.svg";
 
 function Footer() {
   return (
-    <section className="text-center yellow-background">
+    <footer className="text-center yellow-background">
       <div className="flex-wrapper contact-links">
         <a href="mailto:christine@dno.dev" alt="">
           <img src={email} alt="email icon" className="email-img" />
@@ -21,7 +21,7 @@ function Footer() {
           <h3>Linkedin</h3>
         </a>
       </div>
-    </section>
+    </footer>
   );
 }
 

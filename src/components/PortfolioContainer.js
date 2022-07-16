@@ -26,7 +26,7 @@ function PortforlioContainer() {
 ;
 
   return (
-    <div>
+    <div className="page-wrapper">
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} /> 
       {renderPage()}
       <Footer />

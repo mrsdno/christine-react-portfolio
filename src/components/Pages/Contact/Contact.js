@@ -56,7 +56,7 @@ function Contact() {
     e.preventDefault();
 
     alert(
-      `Thank you for sending me a message, ${userName}! This form actually isn't sending this message anywhere right now. 🤦 But - you can send me an email with the link in the footer below! 😊`
+      `✨ Thank you for taking the time to send me a note, ${userName}!\n\n🤦Unfortunately, this form actually isn't sending this message anywhere right now.\n\n😊But - you can send me an email with the link in the footer below!`
     );
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
