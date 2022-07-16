@@ -1,3 +1,7 @@
+footer {
+    margin-top: 20px;
+}
+
 .contact-links a {
     background-color: var(--white);
     color: var(--black);

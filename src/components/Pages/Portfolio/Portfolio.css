@@ -1,11 +1,10 @@
-.portfolio,
-.contact-me {
-    color: var(--black);
+.portfolio {
+    color: var(--white);
     font-size: 36px;
     font-weight: bold;
     display: inline-block;
     margin: 10px;
-    border-bottom: 3px solid var(--black);
+    border-bottom: 3px solid var(--white);
     padding: 50px 0 10px 0;
 }
 
@@ -14,7 +13,6 @@
     width: auto;
     height: 300px;
     border: 5px solid var(--yellow);
-    margin: 20px;
     opacity: 90%;
     border-radius: 20px;
     object-fit: cover;

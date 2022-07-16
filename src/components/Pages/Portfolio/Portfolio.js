@@ -8,10 +8,6 @@ import passwordGenerator from "../../../assets/img/projects/password-generator.p
 function Portfolio() {
     return (
       <section className="text-center">
-        <h2 className="portfolio" id="portfolio">
-          Check Out My Portfolio
-        </h2>
-
         <article className="project">
           <div className="portfolio-content yellow-background">
             <h3>Pokemon Team Builder</h3>
