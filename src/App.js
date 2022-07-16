@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
-import Nav from './components/Nav/Nav'
-import About from './components/About/About'
+import PortfolioContainer from './components/PortfolioContainer.js'
+import About from './components/Pages/About/About.js'
 
 function App() {
+
   return (
     <div>
-      <Nav />
-      <About />
+      <PortfolioContainer />
     </div>
   );
 }

@@ -2,20 +2,26 @@ import React from "react";
 import "./Nav.css";
 import logo from "../../assets/img/logo.jpg";
 
-function Nav() {
+function Nav({ currentPage, handlePageChange }) {
   return (
     <header>
       <img src={logo} alt="dno logo" />
       <nav>
         <ul>
           <li>
-            <a href="#about-me">Learn About Me</a>
+            <a href="#about"
+              onClick={() => handlePageChange('About')}
+              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>Learn About Me</a>
           </li>
           <li>
-            <a href="#portfolio">Check Out My Portfolio</a>
+            <a href="#portfolio"
+              onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>Check Out My Portfolio</a>
           </li>
           <li>
-            <a href="#contact-me">Get In Touch With Me</a>
+            <a href="#contact-me"
+              onClick={() => handlePageChange('Contact')}
+            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Get In Touch With Me</a>
           </li>
           <li>
             <a href="#contact-me">See My Resume</a>
@@ -24,6 +30,7 @@ function Nav() {
       </nav>
     </header>
   );
+
 }
 
 export default Nav;

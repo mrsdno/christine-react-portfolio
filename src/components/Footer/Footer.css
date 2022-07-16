@@ -1,0 +1,22 @@
+.contact-links a {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 14px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.contact-links img {
+    width: 50px;
+}
+
+.contact-links h3 {
+    margin-top: 14px;
+    font-size: 14px;
+}
+.contact-links a:hover {
+    color: var(--red);
+}
+

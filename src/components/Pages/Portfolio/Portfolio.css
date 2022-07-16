@@ -1,0 +1,91 @@
+.portfolio,
+.contact-me {
+    color: var(--black);
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    border-bottom: 3px solid var(--black);
+    padding: 50px 0 10px 0;
+}
+
+
+.portfolio-img img {
+    width: auto;
+    height: 300px;
+    border: 5px solid var(--yellow);
+    margin: 20px;
+    opacity: 90%;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+.portfolio-img img:hover {
+    opacity: 100%;
+}
+
+.portfolio-content {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px 10px;
+    max-width: 40vw;
+}
+
+.portfolio-content h3 {
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.portfolio-content p {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    margin: 0 20px 10px 20px;
+}
+
+.portfolio-content a {
+    color: var(--teal);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.portfolio-content a:hover {
+    color: var(--white);
+}
+
+.first-project {
+    border-bottom: 5px solid var(--teal);
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw;
+    align-items: center;
+    padding: 10px 20vw;
+}
+
+.first-project img {
+    width: 80vw;
+}
+
+.first-project .portfolio-content {
+    width: 80vw;
+}
+
+.project {
+    border-bottom: 5px solid var(--teal);
+    display: flex;
+    margin: 0 10vw;
+    justify-content: center;
+}
+
+
+.project:last-child {
+    border-bottom: none;
+}
