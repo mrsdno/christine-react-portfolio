@@ -1,0 +1,168 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.resume-page h1 {
+    color: var(--white);
+}
+
+/* start MERN animation */
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  color: var(--black);
+}
+
+.circle {
+  position: relative;
+  top: 140px;
+  left: 190px;
+  width: 120px;
+  height: 120px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.mongo {
+  position: absolute;
+  border-bottom: 100px solid var(--yellow);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 120px;
+  border-radius: 10px;
+  transform: rotate(100deg);
+  top: 190px;
+  right: 320px;
+  transition: all 0.35s ease-in-out;
+}
+
+.express {
+  position: absolute;
+  border-bottom: 100px solid var(--black);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 120px;
+  border-radius: 10px;
+  transform: rotate(150deg);
+  top: 90px;
+  right: 255px;
+  transition: all 0.35s ease-in-out;
+}
+
+.react {
+  position: absolute;
+  border-bottom: 100px solid var(--purple);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 120px;
+  border-radius: 10px;
+  transform: rotate(210deg);
+  top: 90px;
+  right: 130px;
+  transition: all 0.35s ease-in-out;
+}
+
+.node {
+  position: absolute;
+  border-bottom: 100px solid var(--teal);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 120px;
+  border-radius: 10px;
+  transform: rotate(260deg);
+  top: 190px;
+  right: 60px;
+  transition: all 0.35s ease-in-out;
+}
+
+.mongo-text,
+.express-text {
+  transform: rotate(-90deg);
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 35px;
+  font-size: 20px;
+}
+
+.node-text,
+.react-text {
+  transform: rotate(90deg);
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.mongo:hover {
+  transform: translateX(-20px) rotate(100deg) translateY(5px) scale(1.2);
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+}
+
+.express:hover {
+  transform: rotate(150deg) translateY(20px) scale(1.2);
+  transition-timing-function: ease;
+  transition: 0.5s;
+}
+
+.react:hover {
+  transform: rotate(210deg) translateY(20px) scale(1.2);
+  transition-timing-function: ease;
+  transition: 0.5s;
+}
+
+.node:hover {
+  transform: translateX(20px) rotate(260deg) translateY(-5px) scale(1.2);
+  transition-timing-function: ease;
+  transition: 0.5s;
+}
+
+.mongo:hover ~ .circle {
+  transition-timing-function: ease;
+  transition: 0.5s;
+  background-color: var(--yellow);
+}
+
+.express:hover ~ .circle {
+  transition-timing-function: ease;
+  transition: 0.5s;
+  background-color: var(--black);
+}
+
+.react:hover ~ .circle {
+  transition-timing-function: ease;
+  transition: 0.5s;
+  background-color: var(--purple);
+}
+
+.node:hover ~ .circle {
+  transition-timing-function: ease;
+  transition: 0.5s;
+  background-color: var(--teal);
+}

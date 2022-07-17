@@ -24,7 +24,9 @@ function Nav({ currentPage, handlePageChange }) {
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Get In Touch With Me</a>
           </li>
           <li>
-            <a href="#contact-me">See My Resume</a>
+            <a href="#resume"
+              onClick={() => handlePageChange('Resume')}
+            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>See My Resume</a>
           </li>
         </ul>
       </nav>
