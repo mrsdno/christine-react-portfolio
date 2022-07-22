@@ -6,7 +6,7 @@ function Resume() {
     <div className="resume-page">
       <div className="container">
         <div className="title">
-          <h2 className="title-border">I'm a Full Stack Web Developer 👩🏼‍💻</h2>
+          <h2 className="title-border">I'm a <span class="purple-text">Full Stack Web Developer</span> 👩🏼‍💻</h2>
           <p className="skills">
             Hover over each image below to see my skills 🛠️
           </p>

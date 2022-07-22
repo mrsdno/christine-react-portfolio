@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  line-height: 2;
 }
 
 .resume-page a {
@@ -39,6 +40,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
+  margin: 3em;
 }
 
 .title {
@@ -46,14 +48,17 @@
   font-family: sans-serif;
   text-align: center;
   font-size: 30px;
-  font-weight: bold;
   margin-bottom: 0.5em;
   color: var(--white);
 }
 
+.purple-text {
+  font-weight: bold;
+}
+
 .skills {
 font-size: 24px;
-color: var(--purple);
+color: var(--white);
 }
 
 
