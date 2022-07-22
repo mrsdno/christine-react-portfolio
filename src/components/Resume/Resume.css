@@ -14,9 +14,123 @@
   gap: 20px;
 }
 
-.resume-page h1 {
-    color: var(--white);
+/* start full stack dev */
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+
+.title {
+  display: inline-block;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: var(--white);
+}
+
+.skills {
+font-size: 24px;
+color: var(--purple);
+}
+
+
+.badges {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.full-stack-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.full-stack-circle-front {
+  backface-visibility: hidden;
+}
+
+.full-stack-circle-front, .full-stack-circle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.full-stack-circle-back {
+  color: var(--yellow);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: rotateY(180deg);
+}
+
+.display-none {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.circle-title:hover .display-none,
+.circle-title:focus .display-none {
+  opacity: 1;
+}
+
+.flip-card:hover .full-stack-circle,
+.flip-card:focus .full-stack-circle {
+  transform: rotateY(180deg);
+}
+
+.front-end, .back-end, .databases, .devops {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.front-end {
+  background-image: url("https://www.svgrepo.com/show/146231/laptop.svg");
+}
+
+.back-end {
+  background-image: url("https://www.svgrepo.com/show/278337/server.svg");
+}
+
+.databases {
+  background-image: url("https://www.svgrepo.com/show/286661/database.svg");
+}
+
+.devops {
+  background-image: url("https://www.svgrepo.com/show/339133/devops.svg");
+}
+
+/* end full stack dev */
 
 /* start MERN animation */
 
@@ -166,3 +280,5 @@
   transition: 0.5s;
   background-color: var(--teal);
 }
+
+/* end MERN animation */
