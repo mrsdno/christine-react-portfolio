@@ -6,10 +6,16 @@ function Resume() {
     <div className="resume-page">
       <div className="container">
         <div className="title">
-          <h2 className="title-border">I'm a Full Stack Web Developer.</h2>
+          <h2 className="title-border">I'm a Full Stack Web Developer 👩🏼‍💻</h2>
           <p className="skills">
-            Hover over each image below to see my skills.
+            Hover over each image below to see my skills 🛠️
           </p>
+          <a
+            href="https://drive.google.com/file/d/18o9FE9B3yDK3Am-xczDUo9hprXyTm7RQ/view?usp=sharing"
+            target="_blank"
+          >
+            Or click here to see my resume 📝
+          </a>
         </div>
         <div className="container1">
           <div className="circle-title flip-card">
