@@ -12,12 +12,12 @@ function Footer() {
           <img src={email} alt="email icon" className="email-img" />
           <h3>Email Me</h3>
         </a>
-        <a href="https://github.com/mrsdno" alt="">
+        <a href="https://github.com/mrsdno" target="_blank" alt="">
           <img src={github} alt="github icon" className="github-img" />
           <h3>Github</h3>
         </a>
         <a href="" alt="">
-          <img src={linkedin} alt="LinkedIn Logo" className="DNO-img" />
+          <img src={linkedin} alt="LinkedIn Logo" target="_blank" className="DNO-img" />
           <h3>Linkedin</h3>
         </a>
       </div>

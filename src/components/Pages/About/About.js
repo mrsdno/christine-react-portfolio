@@ -19,17 +19,19 @@ function About() {
           <br />
         </section>
         <br />
-        <section className="photos">
+        <section className="photos flipcard">
+          <div class="flipcard-holder">
           <img
             src={web2Christine}
             alt="A photo of Christine standing outside"
-            className="photo-me"
+            className="photo-me flipcard-front"
           />
           <img
             src={web3Christine}
             alt="A photo of Christine standing outside"
-            className="photo-me"
-          />
+            className="photo-me flipcard-back"
+            />
+            </div>
         </section>
       </div>
     </div>

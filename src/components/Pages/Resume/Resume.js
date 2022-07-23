@@ -6,7 +6,9 @@ function Resume() {
     <div className="resume-page">
       <div className="container">
         <div className="title">
-          <h2 className="title-border">I'm a <span class="purple-text">Full Stack Web Developer</span> 👩🏼‍💻</h2>
+          <h2 className="title-border">
+            I'm a <span class="purple-text">Full Stack Web Developer</span> 👩🏼‍💻
+          </h2>
           <p className="skills">
             Hover over each image below to see my skills 🛠️
           </p>
@@ -69,7 +71,7 @@ function Resume() {
         </div>
       </div>
 
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <h1>I ❤️ the MERN Tech Stack.</h1>
 
         <div className="mongo">
@@ -85,7 +87,7 @@ function Resume() {
           <p className="node-text">Node</p>
         </div>
         <div className="circle"></div>
-      </div>
+      </div> */}
     </div>
   );
 }
