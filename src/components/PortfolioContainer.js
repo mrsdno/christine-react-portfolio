@@ -4,7 +4,7 @@ import About from "./Pages/About/About";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Contact from "./Pages/Contact/Contact";
 import Footer from "./Footer/Footer";
-import Resume from "./Resume/Resume";
+import Resume from "./Pages/Resume/Resume";
 
 function PortforlioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
